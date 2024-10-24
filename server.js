@@ -2,6 +2,11 @@
 const express = require("express");
 const app = express();
 
+const multer = require("multer");
+app.use(multer().none());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 const gamesRoutes = require("./routes/games.route");
 const { db_close } = require("./models/db-conn");
 
