@@ -20,10 +20,9 @@ Use ThunderClient to try the following endpoints:
 
 ## Get list of Games
 
-### Request
+### Request -  GET /games/all
 
-    GET /games/all
-
+   
     http://localhost:3000/games/all
 
    
@@ -39,10 +38,9 @@ Use ThunderClient to try the following endpoints:
 
 ## Get a specific Game
 
-### Request
+### Request - GET /games/{id}
 
-    GET /games/{id}
-
+    
     http://localhost:3000/games/5
 
 ### Response
@@ -52,11 +50,10 @@ Use ThunderClient to try the following endpoints:
      
 ## Create a new Game
 
-### Request
+### Request -  POST /games/new
 
-    POST /games/new
-    
-    http://localhost:3000/games/new` --data '{"id":21,"name":"New Game","platform":"PS4","release_year":2024,"genre":"Racing","publisher":"UNCG","developer":"CSC372","rating":"E"}
+       
+    http://localhost:3000/games/new` --data '{"id":25,"name":"New Game","platform":"PS4","release_year":2024,"genre":"Racing","publisher":"UNCG","developer":"CSC372","rating":"E"}'
 
 ### Response
     {"changes": 1, "lastInsertRowid": 21 }
