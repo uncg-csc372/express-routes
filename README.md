@@ -59,4 +59,4 @@ Use ThunderClient to try the following endpoints:
     http://localhost:3000/games/new` --data '{"id":21,"name":"New Game","platform":"PS4","release_year":2024,"genre":"Racing","publisher":"UNCG","developer":"CSC372","rating":"E"}
 
 ### Response
-    {"changes": 1, "lastInsertRowid": 24 }
+    {"changes": 1, "lastInsertRowid": 21 }
