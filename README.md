@@ -6,7 +6,7 @@ The Basic REST API using Node + Express JS.
 - Get the project
     - clone
   
-        `git clone https://github.com/uncg-csc340/f24-crud-api-jpa.git`
+        `git clone https://github.com/uncg-csc372/express-routes.git`
     - download zip.
 - Open the project in VSCode.
 - Open a Terminal.
