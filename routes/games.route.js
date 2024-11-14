@@ -13,6 +13,9 @@ router.get("/", gamesController.getAllByOneAttribute);
 //http://localhost:3000/games/5
 router.get("/:id", gamesController.getOneById);
 
+//http://localhost:3000/games/delete/5
+router.delete("/delete/:id", gamesController.deleteGame);
+
 //http://localhost:3000/games/new
 router.post("/new", gamesController.createNew);
 
