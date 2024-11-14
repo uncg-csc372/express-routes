@@ -35,6 +35,16 @@ function getOneById(req, res, next) {
   }
 }
 
+function deleteGame(req, res, next) {
+  try {
+    model.deleteGame(req.params.id);
+    res.json(model.getAll());
+  } catch (err) {
+    console.error("Error while getting games: ", err.message);
+    next(err);
+  }
+}
+
 function createNew(req, res, next) {
   let id = parseInt(req.body.id);
   let name = req.body.name;
@@ -63,5 +73,6 @@ module.exports = {
   getAll,
   getAllByOneAttribute,
   getOneById,
+  deleteGame,
   createNew
 };
