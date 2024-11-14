@@ -22,6 +22,12 @@ function getOneById(id) {
   return item;
 }
 
+function deleteGame(id){
+  let sql = "DELETE FROM Games WHERE id =?; ";
+const info = db.run(sql, id);
+return info;
+}
+
 function createNew(params) {
   let sql = "INSERT INTO Games " +
     "(id, name, platform, release_year, genre, publisher, developer, rating) " +
@@ -41,5 +47,6 @@ module.exports = {
   getAll,
   getAllByOneAttribute,
   getOneById,
+  deleteGame,
   createNew
 };
