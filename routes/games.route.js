@@ -1,6 +1,15 @@
 "use strict";
 const express = require("express");
 const router = express.Router();
+const cors = require('cors');
+
+const corsOptions = {
+  origin: 'http://localhost:3001', // frontend URL
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true // Allow cookies and authentication headers
+};
+
+router.use(cors(corsOptions));
 
 const gamesController = require("../controllers/games.controller");
 
